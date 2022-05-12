@@ -1,1 +1,27 @@
-
+a)o valor printado da variável valor será 20.
+20
+b)o valor printado da variável valor será 29.0 
+29.0
+c)o que será impresso é a letra “P” do nome “ponteiros”.
+P
+d)o que será impresso é a letra “t” do nome ponteiros, pois este se encontra posição 4 (quinta posição) do string.
+e
+e)o que será impresso é a letra “P” do nome “ponteiros”.
+P
+f)o que será impresso é a letra “t” do nome ponteiros, pois este se encontra posição 4 (quinta posição) do string. E como p3 = p3 + 4, esta é a letra que o ponteiro vai apontar.
+e
+g) Devido ao “--”, uma posição é descida, e a letra a ser impressa é o t.
+t
+h)O valor da variável idade será 31.
+31
+i)O valor da variável idade será 45. 
+45
+j)O valor da variável idade será 27.
+27
+l)O valor da variável idade será 31.
+31
+m)O valor da variável idade será 45.
+45
+n)O valor da variável idade será 27.
+27
+As respostas obtidas foram esperadas.

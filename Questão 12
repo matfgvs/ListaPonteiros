@@ -1,1 +1,26 @@
+//Descoberta obtida com a pesquisa: Um ponteiro para função torna possível invocar uma função através de um ponteiro.
+//Programa para exemplificação do conceito de: Ponteiro para função.
+#include <stdio.h>
+//Criação da função.
+int soma (int p1, int p2){
+  int r;
+  r=(p1 + p2);
+  return r;
+}
+int main(){
+//Criação do ponteiro para função.
+int (*ponteirosoma) (int,int);
+//Declaração de variáveis.
+int a=1,b=2,c;
+//Mostra ao usuário os valores que serão somados.
+printf("A = %d e B = %d\n",a,b);
+printf("Sua soma é:");
+//ponteiro para função é utilizado.
+ponteirosoma = soma;
+//Resultado é obtido.
+c=(*ponteirosoma)(a,b);
+//Resultado é impresso na tela.
+printf("%d.",c);
+return 0;
+}
 

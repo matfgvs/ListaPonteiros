@@ -1,1 +1,7 @@
-
+A biblioteca descoberta através da pesquisa foi a "<time.h>".
+A função utilizada desta biblioteca para fazer a medição do tempo foi a "clock()".
+Os resultados obtidos foram os seguintes:
+(Os programas geram valores aleatórios para cada posição do vetor, no caso dessa medição, o comando foi dado para gerar um vetor com 10 posições)
+A função da questão de n°13 levou 0.0030 milissegundos para realizar a ordenação.
+A função da questão de n°14 (qsort) levou 0.0040 milissegundos para realizar a ordenação.
+A função da questão de n°15 (ponteiro para a função qsort) levou 0.0030 milissegundos para realizar a ordenação.

@@ -1,1 +1,10 @@
+O resultado da compilação foi:
+contador/valor/valor/endereço/endereço
+i = 0  ver[0]=1.1  *(f+0)=1.1   &vet[0]=8A4EC160   (f+0)=8A4EC160
+i = 1  ver[1]=2.2  *(f+1)=2.2   &vet[1]=8A4EC164   (f+1)=8A4EC164
+i = 2  ver[2]=3.3  *(f+2)=3.3   &vet[2]=8A4EC168   (f+2)=8A4EC168
+i = 3  ver[3]=4.4  *(f+3)=4.4   &vet[3]=8A4EC16C   (f+3)=8A4EC16C
+i = 4  ver[4]=5.5  *(f+4)=5.5   &vet[4]=8A4EC170   (f+4)=8A4EC170
+As respostas obtidas foram esperadas.
+
 

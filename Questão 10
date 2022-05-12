@@ -1,1 +1,32 @@
+#include <stdio.h>
+int main(){
+//Declaração de variáveis.
+char x1[4],*pc;
+int  x2[4],*pi;
+float x3[4],*pf;
+double x4[4], *pd;
+pc = &x1;
+pi = &x2;
+pf = &x3;
+pd = &x4;
+  //Impressão identificando os Tipos e seus respectivos resultados.
+  printf("Quando o tipo é Char:\n");
+  printf("%X\n",pc+1);
+  printf("%X\n",pc+2);
+  printf("%X\n",pc+3);
+  printf("Quando o tipo é Inteiro:\n");
+  printf("%X\n",pi+1);
+  printf("%X\n",pi+2);
+  printf("%X\n",pi+3);
+  printf("Quando o tipo é Float:\n");
+  printf("%X\n",pf+1);
+  printf("%X\n",pf+2);
+  printf("%X\n",pf+3);
+  printf("Quando o tipo é Double:\n");
+  printf("%X\n",pd+1);
+  printf("%X\n",pd+2);
+  printf("%X\n",pd+3);
+  return 0;
+//O resultado de int foi diferente da proporção proposta pois esse tipo possui 4 bytes, não 2 como no exemplo da questão 9, o resultado estaria dentro das proporções estimadas caso o tipo tivesse 2 bytes, como é o tipo short.  
 
+}

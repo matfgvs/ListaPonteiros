@@ -1,1 +1,50 @@
+#include <stdio.h>
+//função soma de vetores.
+void somavetores (float* a,float* b,float* c,int tamanho){
+int i;
+for (i=0;i<tamanho;i++){
+c[i] = a[i] + b[i];
+}  
+
+}
+int main(void) {
+  //Declaração de variáveis.
+  float *p,*w,*r;
+  int n,i;
+  //Define-se o tamanho dos vetores.
+  printf("Defina o tamanho dos vetores:");
+  scanf("%d",&n);
+  //Alocação de memória.
+  p = (float*) malloc (n*sizeof(float));
+  w = (float*) malloc (n*sizeof(float));
+  r = (float*) malloc (n*sizeof(float));
+  //Atribuição de valores aleatórios para cada posição dos vetores "p" e "w".
+  for (i=0;i<n;i++){
+  p[i]=rand()%100;
+  }
+  for (i=0;i<n;i++){
+  w[i]=rand()%100;
+  }
+  //Imprime os valores que foram postos em cada posição.
+  printf("\nValores contidos dentro do vetor a são:\n");
+  for (i=0;i<n;i++){
+  printf("A posição %d contém o valor: %f\n",i+1,p[i]);
+  }
+  printf("\nValores contidos dentro do vetor b são:\n");
+  for (i=0;i<n;i++){
+  printf("A posição %d contém o valor: %f\n",i+1,w[i]);
+  }
+  //Entra na função da soma.
+  somavetores (p,w,r,n);
+  //Sai da função da soma e imprime os valores de cada posição do vetor soma de p e w.
+  printf("\nValores contidos dentro do vetor soma são:\n");
+  for (i=0;i<n;i++){
+  printf("A posição %d contém o valor: %f\n",i+1,r[i]);
+  }
+  //Libera a memória.
+  free(r);
+  free(w);
+  free(p);
+  return 0;
+}
 

@@ -1,1 +1,5 @@
+As expressões invalidas são:
+p = i;
+se 1 for diferente de zero é ilegal.
+i = (*&)j;
 

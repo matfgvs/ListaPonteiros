@@ -1,1 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int compare (const void * a, const void * b){
+  if (*(float*)a < *(float*)b) {return -1;}
+  if (*(float*)a == *(float*)b) {return 0;}
+  if (*(float*)a > *(float*)b) {return 1;}
+}
+
+int main(void) {
+//Declaração das variáveis.
+float *v;
+int i, n;
+clock_t t,t1,t2;
+//Entrada do tamanho do vetor.
+printf("Digite o tamanho do vetor:");
+scanf("%d",&n);
+printf("\n");
+//alocação do v.
+v = (float*) malloc (n*sizeof(float));
+//Caso o vetor não apresente tamanho o programa encerra.
+  if(n==0){
+    printf("O vetor não apresenta tamanho.");
+    return 0;
+  } else{
+//Definindo os valores de cada posição do vetor.
+for (i=0;i<n;i++){
+v[i]=rand()%100;
+}
+//Imprime os valores de cada posição do vetor.
+for (i=0;i<n;i++){
+  printf("O valor na posição %d do vetor é: %f\n",i+1,v[i]);
+}
+printf("\n");
+  t=clock();
+  //Entra na função.
+  qsort (v, n, sizeof(float), compare);  
+  t1=clock();
+  t2=t1-t;
+  //O tempo de execução da função é impresso.
+  printf("Tempo de execução antes da função: %lf milissegundos.\n", ((double)t)/((CLOCKS_PER_SEC/1000)));
+  printf("Tempo de execução depois da função: %lf milissegundos.\n", ((double)t1)/((CLOCKS_PER_SEC/1000)));
+  printf("Tempo de execução da função: %lf milissegundos.\n\n", ((double)t2)/((CLOCKS_PER_SEC/1000)));
+//Sai da função e imprime os valores ordenados crescentemente.
+for (i=0;i<n;i++){
+  printf("O valor na posição %d do vetor é: %f\n",i+1,v[i]);
+}
+//libera o v.
+free(v);
+  return 0;
+    }
+}
+
 

@@ -1,1 +1,4 @@
+As expressões validas são:
+p = mat + 1; (Está correta, pois o ponteiro p guarda o endereço da segunda posição do vetor "mat").
+x = (*mat)++; (Está correta, pois a variável "x" vai guardar o conteúdo do vetor "mat" incrementado).
 
